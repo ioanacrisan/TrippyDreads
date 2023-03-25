@@ -1,11 +1,28 @@
+import bcrypt from 'bcryptjs';
 const data = {
+  users: [
+    {
+      name: 'Ioana',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+
+    {
+      name: 'Ana',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
+
   products: [
     {
-      _id: '1',
+      //_id: '1',
       name: 'Deep Blue Sea - Full Set',
       slug: 'deep-blue-sea-set',
       category: 'Full Sets',
-      image: 'images/deep-blue-sea.jpg',
+      image: '/images/deep-blue-sea.jpg',
       price: 250,
       countInStock: 4,
       rating: 4.5,
@@ -15,11 +32,11 @@ const data = {
     },
 
     {
-      _id: '2',
+      //_id: '2',
       name: 'Cloudy Sunset - Full Set',
       slug: 'cloudy-sunset-set',
       category: 'Full Sets',
-      image: 'images/cloudy-sunset.jpg',
+      image: '/images/cloudy-sunset.jpg',
       price: 250,
       countInStock: 1,
       rating: 4.5,
