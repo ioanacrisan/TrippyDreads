@@ -4,3 +4,6 @@
 
 1. Create React App
 2. Create Git Repository
+3. HomeScreen
+4. ProductScreen
+5.CartScreen
